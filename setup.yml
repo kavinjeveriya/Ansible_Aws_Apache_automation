@@ -1,0 +1,10 @@
+- hosts: localhost
+  roles:
+  - name: config instance 
+    role: "ec2_instance"
+
+- hosts: tag_name_lab
+  roles:
+  - name: config webserver
+    role: apache_webserver
+ 
