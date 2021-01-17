@@ -1,0 +1,18 @@
+---
+# vars file for ec2_instance
+
+key: "put your key"
+instance_type: "t2.micro"
+os_image: "ami-0a9d27a9f4f5c0efc"
+no_of_instances: "1"
+instance_name_tag: "lab"
+instance_country_tag: "IN"
+instance_region_tag: "ap"
+vpc_subnet: "subnet-0563d68cd56a901fb"
+region_name: "ap-south-1"
+security_group_id: "sg-0bea222c4ee2c82e5"
+aws_access_key: "put your key"
+aws_secret_key: "put your key"
+
+
+

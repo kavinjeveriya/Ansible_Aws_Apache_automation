@@ -1,0 +1,16 @@
+---
+# tasks file for ec2_instance
+- name: create file
+  file:
+       path: /ec2_idempotent_hacks
+       state: directory
+  notify:
+      - launching a ec2 instance on aws
+      - debug
+- name: run handlers now
+  meta: flush_handlers
+
+- name: refresh inventory fact 
+  meta: refresh_inventory
+- name: wait
+  command: sleep 60
