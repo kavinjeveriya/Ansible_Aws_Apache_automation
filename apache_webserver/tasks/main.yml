@@ -1,0 +1,15 @@
+---
+# tasks file for apache_webserver
+- name: install packages
+  package:
+     name: httpd
+     state: present
+- name: coping website file 
+  copy:
+     src:  /help/web.html 
+     dest: /var/www/html/
+- name: starting the httpd service      
+  service:
+     name: httpd
+     state: started
+     enabled: yes
